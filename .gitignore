@@ -1,0 +1,9 @@
+# Folders
+.dioxus
+.vscode
+dist
+target
+static
+
+# Files
+**/*.rs.bk
