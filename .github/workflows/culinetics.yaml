@@ -21,7 +21,7 @@ jobs:
         uses: actions-rust-lang/setup-rust-toolchain@v1
 
       - name: 🪛 Install Dioxus
-        run: cargo install dioxus-cli
+        run: cargo install --git https://github.com/DioxusLabs/cli
 
       - name: 🔧 Build
         run: dx build --release
