@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env:
+  TERM: xterm-color
+
 jobs:
   build:
     name: 🔧 Build
