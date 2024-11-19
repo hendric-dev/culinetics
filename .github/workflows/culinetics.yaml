@@ -20,8 +20,11 @@ jobs:
       - name: 🪛 Setup Rust
         uses: actions-rust-lang/setup-rust-toolchain@v1
 
+      - name: 🪛 Install Cargo binstall
+        uses: cargo-bins/cargo-binstall@main
+
       - name: 🪛 Install Dioxus
-        run: cargo install --git https://github.com/DioxusLabs/dioxus dioxus-cli
+        run: cargo binstall dioxus-cli
 
       - name: 🔧 Build
         run: dx build --release
