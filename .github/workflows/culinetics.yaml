@@ -1,0 +1,60 @@
+name: 🍲 Culinetics
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: 🔧 Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v4
+
+      - name: 🦾 Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+
+      - name: 🪛 Setup cargo-binstall
+        uses: cargo-bins/cargo-binstall@main
+
+      - name: 🪛 Setup Dioxus CLI
+        run: cargo binstall dioxus-cli@0.5.6
+
+      - name: 🔨 Build
+        run: dx build --release
+
+      - name: ☝️ Upload Artifacts
+        if: github.ref == 'refs/heads/main'
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
+  deploy:
+    name: 🚀 Deploy
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    permissions:
+      id-token: write
+      pages: write
+
+    steps:
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
