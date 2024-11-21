@@ -27,7 +27,7 @@ jobs:
 
       - name: 🪛 Setup Dioxus CLI
         run: |
-          cargo binstall --force dioxus-cli@0.5.7
+          cargo binstall --force dioxus-cli
           dx --version
 
       - name: 🔨 Build
