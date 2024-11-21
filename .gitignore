@@ -6,4 +6,5 @@ target
 static
 
 # Files
+**/*.br
 **/*.rs.bk

@@ -1,20 +1,12 @@
 [application]
-asset_dir = "assets"
+asset_dir = "public"
 default_platform = "web"
 name = "culinetics"
 out_dir = "dist"
 
 [web.app]
-base_path = "culinetics"
 title = "Culinetics"
-
-[web.resource]
-script = []
-style = ["/tailwind.css"]
-
-[web.resource.dev]
-script = []
 
 [web.watcher]
 reload_html = true
-watch_path = ["src", "assets"]
+watch_path = ["src", "public"]

@@ -29,6 +29,12 @@ jobs:
       - name: 🔨 Build
         run: dx build --release
 
+      # Workaround to correctly load the assets -> probably can be removed once Dioxus 0.6.0 is stable
+      - name: 🪜 Fix Asset Paths
+        run: |
+          sed -i '' 's/\/tailwind/.\/tailwind/' dist/index.html
+          sed -i '' 's/\/.\/assets\/dioxus/\/culinetics\/assets\/dioxus/' dist/index.html
+
       - name: ☝️ Upload Artifacts
         if: github.ref == 'refs/heads/main'
         id: deployment

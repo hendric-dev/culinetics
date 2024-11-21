@@ -1,7 +1,5 @@
 #![allow(non_snake_case)]
 
-mod tailwind;
-
 use dioxus::prelude::*;
 use tracing::Level;
 
