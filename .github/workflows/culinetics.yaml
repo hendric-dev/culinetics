@@ -20,13 +20,15 @@ jobs:
       - name: 🦾 Setup Rust
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
-          toolchain: 1.81.0
+          toolchain: 1.82.0
 
       - name: 🪛 Setup cargo-binstall
         uses: cargo-bins/cargo-binstall@main
 
       - name: 🪛 Setup Dioxus CLI
-        run: cargo binstall --force dioxus-cli@0.5.7
+        run: |
+          cargo binstall --force dioxus-cli@0.5.7
+          cargo update -p wasm-bindgen --precise 0.2.93
 
       - name: 🔨 Build
         run: dx build --release
