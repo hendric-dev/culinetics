@@ -26,9 +26,7 @@ jobs:
         uses: cargo-bins/cargo-binstall@main
 
       - name: 🪛 Setup Dioxus CLI
-        run: |
-          cargo binstall --force dioxus-cli@0.5.7
-          cargo update -p wasm-bindgen --precise 0.2.93
+        run: cargo binstall --force dioxus-cli
 
       - name: 🔨 Build
         run: dx build --release
