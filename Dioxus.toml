@@ -5,6 +5,8 @@ name = "culinetics"
 out_dir = "dist"
 
 [web.app]
+# Base path will be enabled within the deployment pipeline
+#base_path = "culinetics"
 title = "Culinetics"
 
 [web.resource]
