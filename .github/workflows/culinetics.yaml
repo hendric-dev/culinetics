@@ -19,6 +19,9 @@ jobs:
 
       - name: 🦾 Setup Rust
         uses: actions-rust-lang/setup-rust-toolchain@v1
+        with:
+          cache: false
+          toolchain: 1.82.0
 
       - name: 🪛 Setup cargo-binstall
         uses: cargo-bins/cargo-binstall@main
@@ -33,6 +36,7 @@ jobs:
 
       # Workaround to correctly load the assets -> probably can be removed once Dioxus 0.6.0 is stable
       - name: 🪜 Fix Asset Paths
+        if: github.ref == 'refs/heads/main'
         run: |
           sed -i '' 's/\/tailwind/.\/tailwind/' dist/index.html
           sed -i '' 's/\/.\/assets\/dioxus/\/culinetics\/assets\/dioxus/' dist/index.html
