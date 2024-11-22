@@ -38,8 +38,8 @@ jobs:
       - name: 🪜 Fix Asset Paths
         if: github.ref == 'refs/heads/main'
         run: |
-          sed -i '' 's/\/tailwind/.\/tailwind/' dist/index.html
-          sed -i '' 's/\/.\/assets\/dioxus/\/culinetics\/assets\/dioxus/' dist/index.html
+          sed -i 's/\/tailwind/.\/tailwind/' dist/index.html
+          sed -i 's/\/.\/assets\/dioxus/\/culinetics\/assets\/dioxus/' dist/index.html
 
       - name: ☝️ Upload Artifacts
         if: github.ref == 'refs/heads/main'
