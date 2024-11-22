@@ -7,6 +7,10 @@ out_dir = "dist"
 [web.app]
 title = "Culinetics"
 
+[web.resource]
+style = ["./tailwind.css"]
+[web.resource.dev]
+
 [web.watcher]
 reload_html = true
 watch_path = ["src", "public"]
