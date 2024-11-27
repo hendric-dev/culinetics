@@ -9,4 +9,8 @@ edition = "2021"
 [dependencies]
 dioxus = { version = "0.5.6", features = ["web", "router"] }
 dioxus-logger = "0.5.1"
+manganis = "0.2.2"
+reqwest = { version = "0.12.9", features = ["json"] }
+serde = { version = "1.0.215", features = ["derive"] }
 tracing = "0.1.40"
+web-sys = "0.3.72"

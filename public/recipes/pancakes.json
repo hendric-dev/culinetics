@@ -1,0 +1,21 @@
+{
+  "name": "Pancakes",
+  "image": "pancakes.jpg",
+  "ingredients": [
+    "1 cup all-purpose flour",
+    "2 teaspoons baking powder",
+    "1/2 teaspoon salt",
+    "1 egg",
+    "1 cup milk",
+    "2 tablespoons melted butter",
+    "Optional: 1 tablespoon sugar"
+  ],
+  "instructions": [
+    "Combine dry ingredients: In a large bowl, whisk together the flour, baking powder, salt, and sugar (if using).",
+    "Combine wet ingredients: In a separate bowl, whisk together the egg, milk, and melted butter.",
+    "Mix wet and dry ingredients: Pour the wet ingredients into the dry ingredients and stir until just combined. The batter should be slightly lumpy.",
+    "Cook the pancakes: Heat a lightly oiled griddle or frying pan over medium heat. Pour or scoop about 1/4 cup of batter onto the griddle for each pancake.",
+    "Flip and cook: Cook until bubbles form on the surface of the pancakes and the edges are set, then flip and cook until golden brown on the other side.",
+    "Serve: Serve the pancakes hot with your favorite toppings, such as butter, syrup, fruit, or whipped cream."
+  ]
+}

@@ -1,6 +1,11 @@
 #![allow(non_snake_case)]
 
+mod components;
+mod pages;
+mod recipes;
+
 use dioxus::prelude::*;
+use pages::Home;
 use tracing::Level;
 
 #[derive(Clone, Routable, Debug, PartialEq)]
@@ -17,14 +22,5 @@ fn main() {
 fn App() -> Element {
   rsx! {
     Router::<Route> {}
-  }
-}
-
-#[component]
-fn Home() -> Element {
-  rsx! {
-    div { class: "bg-red-500 flex justify-center h-screen w-screen",
-      h1 { class: "italic mt-20 text-3xl", "Culinetics" }
-    }
   }
 }
