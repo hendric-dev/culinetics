@@ -1,7 +1,13 @@
 <div align="center">
   <h1>
-    <a href="https://hendric-dev.github.io/culinetics">🍲  Culinetics</a>
+    🍲  Culinetics
   </h1>
+</div>
+
+<div align="center">
+  <h3>
+    <a href="https://hendric-dev.github.io/culinetics">Demo</a>
+  </h3>
 </div>
 
 ## Prerequisites
