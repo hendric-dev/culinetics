@@ -32,6 +32,9 @@ and use the following workspace settings:
 ```json
 {
   "biome.lspBin": "./frontend/node_modules/@biomejs/biome/bin/biome",
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit"
+  },
   "editor.formatOnSave": true,
   "[json]": {
     "editor.defaultFormatter": "biomejs.biome"
@@ -43,4 +46,12 @@ and use the following workspace settings:
     "editor.defaultFormatter": "biomejs.biome"
   }
 }
+```
+
+As of [this issue](https://github.com/biomejs/biome/issues/2228) there is still no good monorepo support on that extension,
+so it is necessary to create a symlink of the `biome.json` config into the root folder of the project. \
+In the root folder run the following:
+
+```sh
+ln -s $(pwd)/frontend/biome.json $(pwd)/biome.json
 ```
