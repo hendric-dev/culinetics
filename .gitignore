@@ -1,10 +1,4 @@
 # Folders
-.dioxus
 .vscode
-dist
-target
-static
 
 # Files
-**/*.br
-**/*.rs.bk
