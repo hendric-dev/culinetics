@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'frontend/**/*'
+      - "frontend/**/*"
   push:
     branches:
       - main
     paths:
-      - 'frontend/**/*'
+      - "frontend/**/*"
 
 jobs:
   build:
@@ -33,6 +33,10 @@ jobs:
       - name: 🔨 Build
         working-directory: ./frontend
         run: bun run build
+
+      - name: 🕵️ Lint
+        working-directory: ./frontend
+        run: bun run lint
 
       - name: ☝️ Upload Artifacts
         if: github.ref == 'refs/heads/main'
