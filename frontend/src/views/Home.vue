@@ -1,5 +1,5 @@
 <template>
-  <Button label="Verify" />
+  <Button class="p-4" label="Verify" />
 </template>
 
 <script setup lang="ts">
