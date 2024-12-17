@@ -1,5 +1,7 @@
 <template>
-  <Button class="p-4" label="Verify" />
+  <div class="flex justify-center">
+    <h1>Culinetics</h1>
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -16,6 +16,7 @@ createApp(App)
 					name: 'primevue',
 					order: 'unocss, primevue',
 				},
+				darkModeSelector: '.dark-mode',
 			},
 		},
 	})
