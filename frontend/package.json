@@ -8,13 +8,15 @@
 		"build-only": "vite build",
 		"dev": "vite",
 		"lint": "biome check --error-on-warnings .",
-		"lint:fix": "biome check --apply .",
+		"lint:fix": "biome check --write .",
 		"preview": "vite preview",
 		"test:unit": "vitest",
 		"type-check": "vue-tsc --build"
 	},
 	"dependencies": {
+		"@primevue/themes": "4.2.5",
 		"pinia": "2.3.0",
+		"primevue": "4.2.5",
 		"vue": "3.5.13"
 	},
 	"devDependencies": {
@@ -28,6 +30,7 @@
 		"jsdom": "25.0.1",
 		"npm-run-all2": "7.0.1",
 		"typescript": "5.7.2",
+		"unocss": "0.65.1",
 		"vite": "6.0.3",
 		"vite-plugin-vue-devtools": "7.6.8",
 		"vitest": "2.1.8",
