@@ -10,6 +10,7 @@ export const useRecipesStore = defineStore('🌮 Recipes', () => {
 
 	// Actions
 	async function loadRecipes() {
+		console.log(import.meta.env.BASE_URL)
 		const requests = RECIPE_NAMES.map(name => fetch(`${window.location.origin}/recipes/${name}.json`))
 
 		try {
