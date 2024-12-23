@@ -10,13 +10,10 @@ export const useRecipesStore = defineStore('🌮 Recipes', () => {
 
 	// Actions
 	async function loadRecipes() {
-		console.log(import.meta.env.BASE_URL)
-		const requests = RECIPE_NAMES.map(name => fetch(`${window.location.origin}/recipes/${name}.json`))
+		const requests = RECIPE_NAMES.map(name => import(`@/assets/recipes/${name}.json`))
 
 		try {
-			const responses = await Promise.all(requests)
-			const json: Array<Promise<Recipe>> = responses.map(response => response.json())
-			recipes.value = await Promise.all(json)
+			recipes.value = await Promise.all(requests)
 		} catch (e) {
 			console.error(e)
 		}

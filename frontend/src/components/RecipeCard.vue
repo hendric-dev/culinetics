@@ -1,7 +1,7 @@
 <template>
   <Card>
     <template #header>
-      <img :alt="`${recipe.name} image`" class="w-full" :src="image" />
+      <Image :alt="`${recipe.name} image`" :src="image" width="100%" />
     </template>
     <template #title>{{ recipe.name }}</template>
     <template #content>
@@ -17,11 +17,15 @@
 </template>
 
 <script setup lang="ts">
-import { Card, Divider } from 'primevue'
+import { Card, Divider, Image } from 'primevue'
 import { computed } from 'vue'
 import { type Recipe } from '@/types'
 
-const props = defineProps<{ recipe: Recipe }>()
+interface Props {
+	recipe: Recipe
+}
 
-const image = computed(() => `${window.location.origin}/recipes/${props.recipe.image}`)
+const props = defineProps<Props>()
+
+const image = computed(() => new URL(`../assets/recipes/${props.recipe.image}`, import.meta.url).href)
 </script>

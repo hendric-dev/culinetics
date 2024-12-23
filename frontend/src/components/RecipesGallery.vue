@@ -35,5 +35,5 @@ withDefaults(defineProps<Props>(), {
 	width: '250',
 })
 
-const getImageSrc = (image: string): string => `${window.location.origin}/recipes/${image}`
+const getImageSrc = (image: string): string => new URL(`../assets/recipes/${image}`, import.meta.url).href
 </script>
