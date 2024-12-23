@@ -1,0 +1,22 @@
+{
+	"id": "gyudon",
+	"name": "Gyudon",
+	"image": "gyudon.jpg",
+	"ingredients": [
+		"500g thinly sliced beef (chuck, ribeye, or skirt steak)",
+		"1 large onion, thinly sliced",
+		"1/4 cup soy sauce",
+		"1/4 cup mirin (sweet rice wine)",
+		"2 tablespoons sugar",
+		"1 cup dashi (Japanese fish stock) or chicken broth",
+		"1 tablespoon grated ginger",
+		"white rice"
+	],
+	"instructions": [
+		"Prepare the Dashi (if using): If using dashi powder, dissolve it in the water according to package directions.",
+		"Cook the Beef and Onions: In a large skillet or pot, cook the onions over medium heat until softened, about 5-7 minutes. Remove the onions and set aside.",
+		"Brown the Beef: Add the beef to the skillet and cook until browned, stirring occasionally.",
+		"Simmer the Sauce: Return the onions to the skillet. Add the soy sauce, mirin, sugar, dashi, and ginger. Bring to a simmer, then reduce heat and cook for 5-10 minutes, or until the sauce has thickened slightly.",
+		"Serve: Divide the cooked rice among bowls. Top with the beef and onion mixture and any desired garnishes."
+	]
+}

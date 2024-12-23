@@ -1,9 +1,13 @@
 <template>
-  <div class="flex justify-center">
-    <h1>Culinetics</h1>
+  <div class="flex flex-col h-full items-center w-full">
+    <h1>Choose your Meal</h1>
+    <RecipesGallery :recipes="store.recipes" width="400" />
   </div>
 </template>
 
 <script setup lang="ts">
-import Button from 'primevue/button'
+import RecipesGallery from '@/components/RecipesGallery.vue'
+import { useRecipesStore } from '@/stores'
+
+const store = useRecipesStore()
 </script>

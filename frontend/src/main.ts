@@ -5,6 +5,7 @@ import Aura from '@primevue/themes/aura'
 import PrimeVue from 'primevue/config'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import { router } from './router'
 
 createApp(App)
 	.use(createPinia())
@@ -20,4 +21,5 @@ createApp(App)
 			},
 		},
 	})
+	.use(router)
 	.mount('#app')
