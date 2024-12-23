@@ -1,0 +1,28 @@
+{
+	"id": "chili-con-carne",
+	"name": "Chili con Carne",
+	"image": "chili-con-carne.jpg",
+	"ingredients": [
+		"1 tablespoon olive oil",
+		"1 pound ground beef",
+		"1 large onion, chopped",
+		"2 cloves garlic, minced",
+		"1 (15 ounce) can diced tomatoes, undrained",
+		"1 (15 ounce) can tomato sauce",
+		"1 (15 ounce) can kidney beans, rinsed and drained",
+		"1 (15 ounce) can black beans, rinsed and drained",
+		"1 (10 ounce) can diced tomatoes and green chilies, undrained",
+		"1 teaspoon chili powder",
+		"1 teaspoon ground cumin",
+		"1/2 teaspoon oregano",
+		"1/4 teaspoon cayenne pepper (adjust to taste)",
+		"Salt and pepper to taste"
+	],
+	"instructions": [
+		"Brown the beef: Heat the olive oil in a large pot or Dutch oven over medium heat. Add the ground beef and cook, breaking it up with a spoon, until browned. Drain off any excess grease.",
+		"Sauté the vegetables: Add the onion and garlic to the pot and cook until softened, about 5 minutes.",
+		"Combine ingredients: Stir in the diced tomatoes, tomato sauce, kidney beans, black beans, diced tomatoes and green chilies, chili powder, cumin, oregano, and cayenne pepper. Season with salt and pepper.",
+		"Simmer: Bring the chili to a simmer, then reduce heat to low, cover, and cook for at least 1 hour, or until the flavors have melded. Stir occasionally.",
+		"Serve: Serve hot, garnished with chopped cilantro, shredded cheese, sour cream, and chopped green onions (optional)."
+	]
+}

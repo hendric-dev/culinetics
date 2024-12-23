@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { type Recipe } from '@/types'
 
-const RECIPE_NAMES = ['pancakes'] as const
+const RECIPE_NAMES = ['chili-con-carne', 'gyudon', 'pancakes'] as const
 
 export const useRecipesStore = defineStore('🌮 Recipes', () => {
 	// State
