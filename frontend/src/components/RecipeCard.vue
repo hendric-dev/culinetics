@@ -17,9 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import { Card } from 'primevue'
+import { Card, Divider } from 'primevue'
 import { computed } from 'vue'
-import Divider from 'primevue/divider'
 import { type Recipe } from '@/types'
 
 const props = defineProps<{ recipe: Recipe }>()
