@@ -9,7 +9,7 @@
   >
     <template #item="recipe">
       <RouterLink :to="{name: Route.Recipe, params: {id: recipe.item.id}}">
-        <Image :alt="`${recipe.item.name} Preview`" :src="getImageSrc(recipe.item.image)" :width="width" />
+        <Image :alt="`${recipe.item.name} Preview`" :src="`./recipes/${recipe.item.image}`" :width="width" />
       </RouterLink>
     </template>
     <template #caption="recipe">
@@ -34,6 +34,4 @@ withDefaults(defineProps<Props>(), {
 	recipes: () => [],
 	width: '250',
 })
-
-const getImageSrc = (image: string): string => new URL(`../assets/recipes/${image}`, import.meta.url).href
 </script>
