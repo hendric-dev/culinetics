@@ -1,6 +1,7 @@
 <template>
-  <div class="flex h-full justify-center w-full">
-    <RecipesGallery :recipes="store.recipes" />
+  <div class="flex flex-col h-full items-center w-full">
+    <h1>Choose your Meal</h1>
+    <RecipesGallery :recipes="store.recipes" width="400" />
   </div>
 </template>
 
