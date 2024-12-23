@@ -5,10 +5,13 @@
     </template>
     <template #title>{{ recipe.name }}</template>
     <template #content>
-      <p class="m-0">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
-        quas!
-      </p>
+      <li v-for="ingredient in recipe.ingredients">
+        {{ ingredient }}
+      </li>
+      <Divider />
+      <li v-for="instruction in recipe.instructions">
+        {{ instruction }}
+      </li>
     </template>
   </Card>
 </template>
@@ -16,6 +19,7 @@
 <script setup lang="ts">
 import { Card } from 'primevue'
 import { computed } from 'vue'
+import Divider from 'primevue/divider'
 import { type Recipe } from '@/types'
 
 const props = defineProps<{ recipe: Recipe }>()
