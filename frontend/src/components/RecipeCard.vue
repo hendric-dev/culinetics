@@ -1,7 +1,7 @@
 <template>
   <Card>
     <template #header>
-      <Image :alt="`${recipe.name} image`" :src="`../recipes/${recipe.image}`" width="100%" />
+      <Image :alt="`${recipe.name} image`" :src="`../images/${recipe.image}`" width="100%" />
     </template>
     <template #title>{{ recipe.name }}</template>
     <template #content>

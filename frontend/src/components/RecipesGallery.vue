@@ -9,7 +9,11 @@
   >
     <template #item="recipe">
       <RouterLink :to="{name: Route.Recipe, params: {id: recipe.item.id}}">
-        <Image :alt="`${recipe.item.name} Preview`" :src="`./recipes/${recipe.item.image}`" :width="width" />
+        <Image
+          :alt="`${recipe.item.name} Preview`"
+          :src="`./images/${recipe.item.image}`"
+          :width="width"
+        />
       </RouterLink>
     </template>
     <template #caption="recipe">
