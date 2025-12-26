@@ -1,2 +1,7 @@
 # Folders
 .vscode
+target
+
+# Files
+**/*.rs.bk
+.DS_Store

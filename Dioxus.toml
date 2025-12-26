@@ -1,0 +1,11 @@
+[application]
+
+[web.app]
+title = "Culinetics"
+
+[web.resource]
+script = []
+style = []
+
+[web.resource.dev]
+script = []
